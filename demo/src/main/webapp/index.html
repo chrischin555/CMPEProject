@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Start Page</title>
-        <meta http-equiv="Content Type" content= "text/html; charset=UTF-8">
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-        <form action = "./hello" method="GET, POST">
-            <label>Name of you</label><input type = "text" name = "user">
-            <input type = "submit" value = "Click here>">
-        </form>
-        kmn
-    </body>
+
+<head>
+    <title>File Upload Form</title>
+</head>
+
+<body>
+    <h1>File Upload Form</h1>
+    <form action="http:localhost:9090/demo/" method="post" enctype="multipart/form-data">
+        <label for="wordFile">Choose a Word file to convert:</label>
+        <input type="file" name="wordFile" id="wordFile">
+        <br>
+        <input type="submit" value="Convert to PDF">
+    </form>
+</body>
+
 </html>
